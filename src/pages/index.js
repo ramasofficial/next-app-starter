@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import styles from '../../styles/Home.module.css';
 import translations from '../translations/translations';
+import Title from '../components/title/index';
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
         <p className={styles.description}>
           This is starter structure with translations for{' '}
           <code className={styles.code}>next.js</code>
+          <Title title="Test component" tag="h3" />
         </p>
 
         <div className={styles.grid}>
